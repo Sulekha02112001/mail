@@ -1,0 +1,11 @@
+import smtplib
+
+content = 'your code have been pushed on github successfuly'
+
+mail = smtplib.SMTP('smtp.gmail.com',587)
+
+mail.ehlo()
+mail.starttls()
+mail.login('kumarisulekha02112001@gmail.com','Sulekha7701@')
+mail.sendmail('kumarisulekha02112001@gmail.com','satyamskic807681@gmail.com',content)
+mail.close()
